@@ -6,6 +6,11 @@
   <title>Damla Özgürtepe | UGC & AI Pazarlama Mentörlüğü</title>
   <meta name="description" content="Damla Özgürtepe - 20 yaşında girişimci, UGC & AI Collaby Academy öğrencisi ve partneri. Sıfırdan başlayanlar için pazarlama ve yapay zeka içerik mentörlüğü.">
   
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Damla Özgürtepe | UGC & AI Pazarlama Mentörlüğü">
+  <meta property="og:description" content="UGC & AI Collaby Academy Kapsamlı Partner Programı ile yapay zekanın gücünü ve birebir mentörlük desteğini keşfedin.">
+  <meta property="og:type" content="website">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -20,12 +25,12 @@
         extend: {
           colors: {
             brand: {
-              green: '#173322',
+              green: '#173322',       /* Akademi Derin Orman Yeşili */
               greenHover: '#0F2417',
-              cream: '#FAF9F5',
+              cream: '#FAF9F5',       /* Sıcak Kırık Beyaz / Alabaster Zemin */
               cardCream: '#F3F1EA',
-              blush: '#F3D7D7',
-              lavender: '#E5E3F5',
+              blush: '#F3D7D7',       /* Pudra Pembe Vurgu */
+              lavender: '#E5E3F5',    /* Soft Lavanta Vurgu */
               dark: '#1A1A1A',
               muted: '#5A5A5A',
               border: '#E8E5DC'
@@ -53,6 +58,7 @@
         <span class="text-[10px] uppercase tracking-widest text-brand-muted font-medium">UGC & AI Mentörlük</span>
       </a>
       
+      <!-- Desktop Navigasyon -->
       <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-brand-dark/80">
         <a href="#hakkimda" class="hover:text-brand-green transition-colors">Hakkımda</a>
         <a href="#karsilastirma" class="hover:text-brand-green transition-colors">Neden Benimle?</a>
@@ -62,9 +68,12 @@
         <a href="#sss" class="hover:text-brand-green transition-colors">SSS</a>
       </nav>
 
+      <!-- Butonlar & Sosyal Medya -->
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://www.instagram.com/damladijital.co/" target="_blank" rel="noopener noreferrer" 
-           class="text-xs font-semibold px-3 py-2 rounded-full border border-brand-green/20 hover:bg-brand-green/5 text-brand-green transition-colors flex items-center gap-1.5">
+           class="text-xs font-semibold px-3 py-2 rounded-full border border-brand-green/20 hover:bg-brand-green/5 text-brand-green transition-colors flex items-center gap-1.5"
+           title="Instagram Hesabı">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           <span>@damladijital.co</span>
         </a>
         <a href="https://www.shopier.com/damladijitalco/51343130" target="_blank" rel="noopener noreferrer"
@@ -73,11 +82,13 @@
         </a>
       </div>
 
+      <!-- Mobil Hamburger Butonu -->
       <button id="mobile-menu-btn" class="md:hidden text-brand-green p-2 focus:outline-none" aria-label="Menüyü Aç">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
       </button>
     </div>
 
+    <!-- Mobil Menü Paneli -->
     <div id="mobile-menu" class="hidden md:hidden bg-brand-cream border-b border-brand-border px-6 py-4 space-y-3">
       <a href="#hakkimda" class="block text-sm font-medium text-brand-dark py-1">Hakkımda</a>
       <a href="#karsilastirma" class="block text-sm font-medium text-brand-dark py-1">Neden Benimle?</a>
@@ -98,119 +109,100 @@
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION ==================== -->
-  <section class="py-16 md:py-24 border-b border-brand-border">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
-      <div class="md:col-span-7 space-y-6">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-green/5 border border-brand-green/15 text-xs font-semibold text-brand-green">
-          <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
-          UGC & AI Collaby Academy Resmi Partneri
-        </div>
-        
-        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.08] text-brand-green">
-          Yapay Zekanın Gücüyle. UGC'nin Doğallığıyla. Sıfırdan Başla.
-        </h1>
-        
-        <p class="text-base sm:text-lg text-brand-muted leading-relaxed font-light">
-          UGC & AI Collaby Academy Kapsamlı Partner Programı'na benim aracılığımla katıl; yapay zeka destekli içerik üretimini, MatchAI sistemini ve sana özel kurduğum gruplarda <strong>birebir mentörlük desteğimi</strong> tek bir adımda al.
-        </p>
+  <!-- ==================== HERO SECTION (EDİTORYAL VE DENGELİ) ==================== -->
+  <section class="py-20 md:py-28 border-b border-brand-border">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-green/5 border border-brand-green/15 text-xs font-semibold text-brand-green">
+        <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
+        UGC & AI Collaby Academy Resmi Partneri
+      </div>
+      
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] text-brand-green max-w-3xl mx-auto">
+        Yapay Zekanın Gücüyle. UGC'nin Doğallığıyla. Sıfırdan Başla.
+      </h1>
+      
+      <p class="text-base sm:text-lg text-brand-muted leading-relaxed font-light max-w-2xl mx-auto">
+        UGC & AI Collaby Academy Kapsamlı Partner Programı'na benim aracılığımla katıl; yapay zeka destekli içerik üretimini, MatchAI sistemini ve sana özel kurduğum gruplarda <strong>birebir mentörlük desteğimi</strong> tek bir adımda al.
+      </p>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-          <div class="bg-brand-cardCream p-3 rounded-xl border border-brand-border text-center">
-            <span class="block text-xs font-bold text-brand-green">0 TL Ek Ücret</span>
-            <span class="text-[11px] text-brand-muted">Mentörlük pakete dahildir</span>
-          </div>
-          <div class="bg-brand-cardCream p-3 rounded-xl border border-brand-border text-center">
-            <span class="block text-xs font-bold text-brand-green">Özel Grup Desteği</span>
-            <span class="text-[11px] text-brand-muted">Girişimcilik yol arkadaşlığı</span>
-          </div>
-          <div class="bg-brand-cardCream p-3 rounded-xl border border-brand-border text-center col-span-2 sm:col-span-1">
-            <span class="block text-xs font-bold text-brand-green">MatchAI & 4 Dil</span>
-            <span class="text-[11px] text-brand-muted">Global müşteri eşleşmesi</span>
-          </div>
+      <!-- Güven & Şeffaflık Rozetleri -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 max-w-2xl mx-auto">
+        <div class="bg-brand-cardCream p-4 rounded-xl border border-brand-border text-center">
+          <span class="block text-sm font-bold text-brand-green">0 TL Ek Ücret</span>
+          <span class="text-xs text-brand-muted">Mentörlük pakete dahildir</span>
         </div>
-
-        <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-          <a href="https://www.shopier.com/damladijitalco/51343130" target="_blank" rel="noopener noreferrer"
-             class="inline-flex justify-center items-center bg-brand-green hover:bg-brand-greenHover text-white font-semibold text-sm px-8 py-4 rounded-full transition-all shadow-md hover:shadow-lg text-center">
-            Benimle Başla, Akademiye Katıl →
-          </a>
-          <a href="https://www.instagram.com/damladijital.co/" target="_blank" rel="noopener noreferrer"
-             class="inline-flex justify-center items-center bg-brand-blush/50 hover:bg-brand-blush/80 text-brand-green font-semibold text-sm px-6 py-4 rounded-full transition-colors text-center">
-            Instagram'dan DM At
-          </a>
+        <div class="bg-brand-cardCream p-4 rounded-xl border border-brand-border text-center">
+          <span class="block text-sm font-bold text-brand-green">Özel Grup Desteği</span>
+          <span class="text-xs text-brand-muted">Girişimcilik yol arkadaşlığı</span>
         </div>
-
-        <p class="text-xs text-brand-muted font-light">
-          * Kişisel web sitemdir. Fiyatlandırma doğrudan <a href="https://www.shopier.com/damladijitalco/51343130" target="_blank" rel="noopener noreferrer" class="underline font-medium text-brand-green">Shopier güvencesiyle</a> sunulmaktadır.
-        </p>
+        <div class="bg-brand-cardCream p-4 rounded-xl border border-brand-border text-center">
+          <span class="block text-sm font-bold text-brand-green">MatchAI & 4 Dil</span>
+          <span class="text-xs text-brand-muted">Global müşteri eşleşmesi</span>
+        </div>
       </div>
 
-      <!-- Hero Görseli: damla-kahraman.jpg.jpg -->
-      <div class="md:col-span-5 relative">
-        <div class="relative mx-auto max-w-sm rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-          <img src="damla-kahraman.jpg.jpg" onerror="this.onerror=null; this.src='damla-hero.jpg';" alt="Damla Özgürtepe" class="w-full h-auto object-cover aspect-[4/5] bg-brand-cardCream">
-          <div class="absolute bottom-4 left-4 right-4 bg-brand-cream/95 backdrop-blur-md p-4 rounded-xl border border-brand-border text-center shadow-sm">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-green">Kişisel Web Sitesi</span>
-            <p class="text-sm font-semibold text-brand-dark">Damla Özgürtepe</p>
-            <p class="text-xs text-brand-muted">20 Yaşında Girişimci & AI İçerik Mentörü</p>
-          </div>
-        </div>
+      <!-- Aksiyon Butonları -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://www.shopier.com/damladijitalco/51343130" target="_blank" rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex justify-center items-center bg-brand-green hover:bg-brand-greenHover text-white font-semibold text-sm px-9 py-4 rounded-full transition-all shadow-md hover:shadow-lg text-center">
+          Benimle Başla, Akademiye Katıl →
+        </a>
+        <a href="https://www.instagram.com/damladijital.co/" target="_blank" rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex justify-center items-center bg-brand-blush/50 hover:bg-brand-blush/80 text-brand-green font-semibold text-sm px-7 py-4 rounded-full transition-colors text-center">
+          Instagram'dan DM At
+        </a>
       </div>
+
+      <p class="text-xs text-brand-muted font-light">
+        * Kişisel web sitemdir. Fiyatlandırma doğrudan <a href="https://www.shopier.com/damladijitalco/51343130" target="_blank" rel="noopener noreferrer" class="underline font-medium text-brand-green">Shopier güvencesiyle</a> sunulmaktadır.
+      </p>
     </div>
   </section>
 
-  <!-- ==================== HAKKIMDA (BEN DAMLA) ==================== -->
+  <!-- ==================== HAKKIMDA (BEN DAMLA - EDİTORYAL KART) ==================== -->
   <section id="hakkimda" class="py-20 bg-brand-cardCream/60 border-b border-brand-border">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="grid md:grid-cols-12 gap-10 items-center">
-        <!-- Fotoğraf: damla-hakkında.jpg.jpg -->
-        <div class="md:col-span-5">
-          <div class="rounded-2xl overflow-hidden shadow-lg border-2 border-white bg-white">
-            <img src="damla-hakkında.jpg.jpg" onerror="this.onerror=null; this.src='damla-hakk%C4%B1nda.jpg.jpg'; this.onerror=function(){this.src='damla-about.jpg';};" alt="Damla Özgürtepe ile Tanışın" class="w-full h-auto object-cover aspect-[3/4] bg-brand-cream">
-            <div class="p-4 bg-white text-center border-t border-brand-border">
-              <a href="https://www.instagram.com/damladijital.co/" target="_blank" rel="noopener noreferrer" 
-                 class="text-xs text-brand-green font-semibold hover:underline inline-flex items-center gap-1">
-                <span>Instagram'da Günlük Üretimlerim: @damladijital.co</span> ↗
-              </a>
-            </div>
-          </div>
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="bg-white p-8 sm:p-12 rounded-3xl border border-brand-border shadow-sm space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-brand-border pb-4">
+          <span class="text-xs uppercase font-bold tracking-widest text-brand-green">Hikâyem & Yaklaşımım</span>
+          <a href="https://www.instagram.com/damladijital.co/" target="_blank" rel="noopener noreferrer" 
+             class="text-xs text-brand-green font-semibold hover:underline inline-flex items-center gap-1">
+            <span>Instagram: @damladijital.co</span> ↗
+          </a>
         </div>
 
-        <div class="md:col-span-7 space-y-5">
-          <span class="text-xs uppercase font-bold tracking-widest text-brand-green">Hikâyem & Yaklaşımım</span>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-green">
-            Ben Damla: “Birlikte Öğrenelim, Birlikte Üretelim.”
-          </h2>
-          
-          <div class="space-y-4 text-brand-dark/90 leading-relaxed font-light text-sm sm:text-base">
-            <p>
-              Ben <strong>Damla Özgürtepe</strong>; 20 yaşında bir girişimci, UGC & AI Collaby Academy öğrencisi ve partneriyim.
-            </p>
-            <p>
-              Sıfırdan başlarken nereden ilerleyeceğini bilmenin fazlasıyla önemli olduğunu düşünüyorum. Kamera karşısına ilk kez geçmekten, yapay zeka araçlarını kurgu rutinine oturtmaya kadar pek çok aşamada net bir rehbere ihtiyaç duyuluyor.
-            </p>
-            <p>
-              Akademiye benimle katılan kişilere <strong>pazarlama</strong> ve <strong>yapay zeka ile görsel ve video oluşturma</strong> alanlarında kişisel mentörlük desteği sunuyorum.
-            </p>
-            <p>
-              Özel gruplarımda buluşarak öğrendiklerini girişimcilik sürecine taşımanda sana eşlik ediyorum.
-            </p>
-          </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-green">
+          Ben Damla: “Birlikte Öğrenelim, Birlikte Üretelim.”
+        </h2>
+        
+        <div class="space-y-4 text-brand-dark/90 leading-relaxed font-light text-sm sm:text-base">
+          <p>
+            Ben <strong>Damla Özgürtepe</strong>; 20 yaşında bir girişimci, UGC & AI Collaby Academy öğrencisi ve partneriyim.
+          </p>
+          <p>
+            Sıfırdan başlarken nereden ilerleyeceğini bilmenin fazlasıyla önemli olduğunu düşünüyorum. Kamera karşısına ilk kez geçmekten, yapay zeka araçlarını kurgu rutinine oturtmaya kadar pek çok aşamada net bir rehbere ihtiyaç duyuluyor.
+          </p>
+          <p>
+            Akademiye benimle katılan kişilere <strong>pazarlama</strong> ve <strong>yapay zeka ile görsel ve video oluşturma</strong> alanlarında kişisel mentörlük desteği sunuyorum.
+          </p>
+          <p>
+            Özel gruplarımda buluşarak öğrendiklerini girişimcilik sürecine taşımanda sana eşlik ediyorum.
+          </p>
+        </div>
 
-          <div class="pt-3">
-            <a href="https://www.shopier.com/damladijitalco/51343130" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center gap-2 bg-brand-green text-white text-xs font-semibold px-6 py-3 rounded-full hover:bg-brand-greenHover transition-colors shadow">
-              <span>Benimle Başla, Akademiye Katıl</span>
-              <span>→</span>
-            </a>
-          </div>
+        <div class="pt-4 border-t border-brand-border flex items-center justify-between flex-wrap gap-4">
+          <span class="text-xs text-brand-muted font-light">Kişisel mentörlük desteği için:</span>
+          <a href="https://www.shopier.com/damladijitalco/51343130" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 bg-brand-green text-white text-xs font-semibold px-6 py-3 rounded-full hover:bg-brand-greenHover transition-colors shadow">
+            <span>Benimle Başla, Akademiye Katıl</span>
+            <span>→</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== NET AYRIM ==================== -->
+  <!-- ==================== NET AYRIM: AKADEMİ vs. DAMLA ==================== -->
   <section id="karsilastirma" class="py-20 bg-white border-b border-brand-border">
     <div class="max-w-5xl mx-auto px-6 space-y-12">
       <div class="text-center max-w-2xl mx-auto space-y-3">
